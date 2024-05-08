@@ -1,0 +1,37 @@
+<div><img #image1 src="path/to/image1.jpg" alt="Image 1" width="200" height="300" (click)="showImageSrc(image1)">
+  <img #image2 src="path/to/image2.jpg" alt="Image 2" width="200" height="300" (click)="showImageSrc(image2)">
+  <img #image3 src="path/to/image3.jpg" alt="Image 3" width="200" height="300" (click)="showImageSrc(image3)"></div>
+
+<div>
+  <a  (mouseenter)="setTitle($event)" (mouseleave)="clearTitle($event)" href="#">Перше посилання</a>
+  <a  (mouseenter)="setTitle($event)" (mouseleave)="clearTitle($event)" href="#">Друге посилання</a>
+  <a  (mouseenter)="setTitle($event)" (mouseleave)="clearTitle($event)" href="#">Третє посилання</a>
+</div>
+
+<div>
+  <a href="#" (mouseenter)="addHrefToTitle($event)" (mouseleave)="removeHrefFromTitle($event)">Посилання 1</a>
+  <a href="#" (mouseenter)="addHrefToTitle($event)" (mouseleave)="removeHrefFromTitle($event)">Посилання 2</a>
+  <a href="#" (mouseenter)="addHrefToTitle($event)" (mouseleave)="removeHrefFromTitle($event)">Посилання 3</a>
+</div>
+
+
+<div>
+  <input type="text"  (blur)="displayValue($event)">
+  <input type="text"  (blur)="displayValue($event)">
+  <input type="text"  (blur)="displayValue($event)">
+  <p id="demo"></p>
+</div>
+
+<div>
+  <p (click)="showSquare($event)">2</p>
+  <p (click)="showSquare($event)">5</p>
+  <p (click)="showSquare($event)">8</p>
+</div>
+
+<input type="text" data-length="5" (blur)="checkLength($event)">
+<input type="text" data-length="8" (blur)="checkLength($event)">
+<input type="text" data-length="10" (blur)="checkLength($event)">
+
+<div (click)="toggleColor($event)">Div 1</div>
+<div (click)="toggleColor($event)">Div 2</div>
+<div (click)="toggleColor($event)">Div 3</div>
